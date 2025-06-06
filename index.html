@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Photopea</title>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+   }
+   .main-image {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .top-right-button {
+      position: absolute;
+      top: 150px;
+      right: 30px;
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden audio element -->
+  <audio id="lizard-audio" src="ohlooklizard.mp3"></audio>
+
+  <!-- Is this a secret message? oooo
+  -->
+
+  <!-- Clickable image button -->
+  <img 
+    src="Lizard.jpg" 
+    alt="Play Sound" 
+    class="top-right-button" 
+    onclick="document.getElementById('lizard-audio').play()" 
+  >
+
+   <!-- Main image in center -->
+  <img src="font2.jpg" alt="Main Image" class="main-image">
+
+</body>
+</html>
